@@ -11,8 +11,8 @@ const Header = () => {
           <Text style={{ fontSize: 32, fontWeight: "700", lineHeight: 38.4 }}>Hello , Devs</Text>
           <Text style={{ paddingTop: 2 }}>14 tasks today</Text>
         </View>
-        <View style={styles.profileContainer}>
-          <Image style={styles.profile} source={userPrifle} />
+        <View style={styles.userContainer}>
+          <Image style={styles.user} source={userPrifle} />
         </View>
       </View>
 
@@ -42,14 +42,14 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
 
-  profileContainer: {
+  userContainer: {
     width: 50,
     height: 51,
     borderRadius: 100,
     backgroundColor: "white",
   },
 
-  profile: {
+  user: {
     height: 45,
     width: 50,
     shadowColor: "#000",
