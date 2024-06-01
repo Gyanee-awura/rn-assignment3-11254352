@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TextInput } from "react-native";
-//import userPrifle from "../assets/user-profile.png";
-// import search from "../assets/search.png";
-// import slider from "../assets/slider.png"
+import userPrifle from "../assets/user-profile.png";
+import search from "../assets/search.png";
+import slider from "../assets/slider.png"
 
 const Header = () => {
   return (
@@ -12,20 +12,20 @@ const Header = () => {
           <Text style={{ paddingTop: 2 }}>14 tasks today</Text>
         </View>
         <View style={styles.profileContainer}>
-          {/* <Image style={styles.profile} source={userPrifle} /> */}
+          <Image style={styles.profile} source={userPrifle} />
         </View>
       </View>
 
       <View style={styles.searchContainer}>
         <View style={styles.searchBox}>
           <TextInput style={styles.input} placeholder="Search" placeholderTextColor="#000" />
-          {/* <Image style={styles.searchIcon} source={search} /> */}
+          <Image style={styles.searchIcon} source={search} />
         </View>
 
         <View style={styles.toggleSlider}>
-          {/* <Image style={styles.sliderImg}
+          <Image style={styles.sliderImg}
             source={slider}
-          /> */}
+          />
         </View>
       </View>
     </View>
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    marginTop: 20
   },
 
   profileContainer: {
