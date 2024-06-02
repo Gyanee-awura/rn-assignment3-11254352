@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, TextInput } from "react-native";
 import userPrifle from "../assets/user-profile.png";
 import search from "../assets/search.png";
 import slider from "../assets/slider.png"
+import { FontAwesome6 } from '@expo/vector-icons';
 
 const Header = () => {
   return (
@@ -23,9 +24,10 @@ const Header = () => {
         </View>
 
         <View style={styles.toggleSlider}>
-          <Image style={styles.sliderImg}
+          {/* <Image style={styles.sliderImg}
             source={slider}
-          />
+          /> */}
+          <FontAwesome6 name="sliders" size={30} color="#fff" />
         </View>
       </View>
     </View>
@@ -95,7 +97,9 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
     borderRadius: 20,
     marginTop: 22,
-    color: "#ffff"
+    color: "#ffff",
+    alignItems:'center',
+    justifyContent:'center'
   },
 
   sliderImg: {
